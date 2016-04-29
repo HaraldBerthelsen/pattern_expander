@@ -1,0 +1,650 @@
+﻿avbryt
+(avbryt | stoppa | avsluta) [ inställning | val]
+ångra
+([gå] tillbaka | (ångra | radera) [handling | inställning | val])
+hjälp
+(hjälp | vad kan jag säga | [jag] vet inte)
+gå till slutet
+(gå till (slutet) [av listan] | sista sidan)
+gå till början
+(gå | gå tillbaka ) till (början [av listan ] | första sidan)
+föregående sida
+visa föregående sida
+nästa sida
+[visa | gå till] nästa sida
+<DisplayItemNo> som destination
+((destination | adress | rastplats | trafikplats) [är] [i] <DisplayItemNo> | [ställ in] <DisplayItemNo> som (destination | adress | rastplats))
+välj <DisplayItemNo>
+[välj | öppna | ta] (<DisplayItemNo> | <DynN-BestSelection>)
+välj staden i <DisplayItemNo>
+(välj staden i <DisplayItemNo>) | (staden i <DisplayItemNo> är okej)
+navigera till <DisplayItemNo>
+(res | (guida | navigera | anvisa | kör) [mig]) till <DisplayItemNo>
+ring <DisplayItemNo>
+(ring [kontakt i] | [påbörja | starta | börja] samtal till [kontakt [i]] ) [<DisplayItemNo>] [nu] hanna
+skicka SMS till <DisplayItemNo> <SMS_templates>
+skicka [ett] (SMS | [kort | snabbt] meddelande | textmeddelande |MMS ) [till <DisplayItemNo>] [<SMS_templates>]
+<SMS_templates>
+[välj | öppna | ta] [SMS-typ | SMS-mall] <SMS_templates>
+<phone_types>
+[välj | öppna | ta] [typ av telefon] <phone_types>
+ja
+(ja | okej | [det är] korrekt | [det] stämmer)
+nej
+(nej | nix | [det är] fel)
+navigera till kontakt <DynN-BestSelection>
+(res | (guida | navigera | anvisa | kör) [mig]) till kontakt [(<DynN-BestSelection> | <DisplayItemNo>)]
+ring <DynN-BestSelection>
+(ring | [(börja | starta | ring) [ett]] samtal [till] | [ telefon | telefonkontakt ]) (<DynN-BestSelection> | <DisplayItemNo>) [nu]
+skicka textmeddelande till <DynN-BestSelection>
+skicka [ett] SMS| ([kort | snabbt] meddelande | textmeddelande | MMS ) [till (<DynN-BestSelection> |<DisplayItemNo>)] [<SMS_templates>] hanna
+spela (<DisplayItemNo> | <DynN-BestSelection>)
+(spela | lyssna på) (<DisplayItemNo> | <DynN-BestSelection>)
+spela låt <DisplayedN-BestSongs>
+(spela | lyssna på | välj) ( låt | titel ) (<DisplayedN-BestArtists> | <DisplayItemNo>)
+spela album <DisplayedN-BestAlbums>
+(spela | lyssna på | välj) album (<DisplayedN-BestArtists> | <DisplayItemNo>)
+spela artist <DisplayedN-BestArtists>
+(spela | lyssna på | välj) artist (<DisplayedN-BestArtists> | <DisplayItemNo>)
+välj gatan i <DisplayItemNo>
+välj gatan i <DisplayItemNo>
+ersätt
+ersätt [den gamla destinationen]
+lägg till
+lägg till [en] [rastplats | trafikplats]
+välj typ av intressepunkt i <DisplayItemNo>
+välj (intressepunkt | (typ | kategori) av intressepunkt ) i <DisplayItemNo> | (intressepunkt | (typ | kategori) av intressepunkt) i<DisplayItemNo> är okej
+<phone_number>
+<phone_number>
+ring
+(ring | [börja | starta] samtal [till] )
+börja igen
+börja (igen | om)
+ring röstbrevlådan
+
+ställ in kanal <ChannelName>
+[välj | ställ in | byt till ] (kanal | radiostation | station) [<ChannelName>]
+ställ in <FMChannelName> FM.
+(välj | ställ in | byt till) ( FM-kanal | FM radiostation | FM-station) <FMChannelName> | [<FMChannelName>] (FM | FM-kanal | FM radiostation | FM-station) hanna
+ställ in kanal <DigitalChannel>
+((välj | ställ in | byt till) (digitalkanal | digital radiostation | digital station) ) [<DigitalChannel>]
+ställ in förvalt nummer <PresetNumber>
+(välj | ställ in | byt till ) (förval | förvalt nummer) <PresetNumber>
+slå på källa <AudioInput>
+(starta | slå på | byt till | spela | välj | aktivera) [ljudkällan] <AudioInput>
+ställ in dialoginställningar till <DialogMode>
+[ställ in (röstinställning | inställning) ] till | (röstinställning | inställning) [till] [<DialogMode>] hanna
+vad spelas
+berätta vilken låt som spelas [just nu]
+återstående distans
+[berätta | visa] återstående (sträcka | avstånd) [till min destination]
+återstående tid
+[berätta | visa] återstående tid [till min destination]
+ankomsttid
+[berätta | visa] den uppskattade ankomsttiden | uppskattad ankomsttid [till min destination]
+återuppta ruttanvisning
+(börja | starta | återuppta | slå på) (ruttanvisning | navigering | röstnavigering )
+avsluta ruttanvisning
+(avbryt | stoppa) (ruttanvisning | navigering)
+lyssna till de senaste meddelandena
+(lyssna på | läs ) [senaste] (SMS | textmeddelande | MMS )
+ställ in <FM_Frequency> FM
+(välj | ställ in | byt till ) (kanal | radio | radiostation | station | frekvens ) [<FM_Frequency>] FM
+välj profil <UserProfileName>
+(ställ in | välj) (användare | profil | användarprofil) [<UserProfileName>]
+navigera hem
+(res | (guida | navigera | anvisa | kör) [mig]) hem
+navigera till jobbet
+(res | (guida | navigera | anvisa | kör) [mig]) till jobbet
+navigera till förvald adress <PreferredAddress>
+(res | (guida | navigera | anvisa | kör) [mig]) till (önskad (destination | adress | kontakt) | favoritdestination | favoritadress | favoritkontakt) [<PreferredAddress>]
+navigera till nylig destination <LastDestinations>
+(res | (guida | navigera | anvisa | kör) [mig]) till [min] (senaste | nyligaste) (destination | adress | kontakt) <LastDestinations>
+spela <Title_USB>
+(spela | lyssna på | välj) ((<Title_USB> | <Album_USB>) [[av artist | av artisten] <Artist_USB>] | (<Title_iPod> | <Album_iPod>) [by [[the] artist] <Artist_iPod>] | (<Title_Jukebox> | <Album_Jukebox>) [[av artist | av artisten] <Artist_Jukebox>])
+spela låt <Title_USB>
+(spela | lyssna på | välj) (sång | titel | spår) [<Title_USB> | <Title_iPod> | <Title_Jukebox>]
+spela album <Album_USB>
+(spela | välj | lyssna till) album [<Album_USB> | <Album_iPod> | <Album_Jukebox>]
+spela artist <Artist_USB>
+(spela | lyssna på | välj) artist [<Artist_USB> | <Artist_iPod> | <Artist_Jukebox>]
+visa samtal
+(visa | öppna) [min] samtalshistorik
+gå till slutet
+(gå till (slutet [av listan] | sista sidan))
+gå till början
+[([gå] tillbaka till | visa | återvänd till) (början av (sidan | listan) | första sidan))
+föregående sida
+[visa | gå [tillbaka] till] föregående sida | skrolla upp | gå tillbaka en sida
+nästa sida
+[visa | gå till] nästa sida | skrolla ned | vänd sida
+navigera till kontakt <Contact>
+(res | (guida | ta | navigera | anvisa | kör) [mig]) till kontakt [<Contact>]
+ring kontakt <Contact> <phone_types>
+ring till kontakt <Contact> [<phone_types>]
+skicka kort meddelande till <Contact> [<phone_types>] [<SMS_templates>]
+skicka [ett] (SMS | [kort | snabbt] meddelande | MMS ) till [<Contact> [<phone_types>] [<SMS_templates>]]
+ring <phone_number>
+(ring [nummer ] | ring [telefon | telefonnummer]) <phone_number>
+navigera till <Address>
+(res | (guida | navigera | anvisa | kör) [mig]) till (destination | adress) [<Address>]
+navigera till lokal adress <Address>
+(res | (guida | navigera | anvisa | kör) [mig]) (till (den lokala adressen) <Address> | till en adress i den här staden)
+navigera till korsningen vid <Address>
+(res | (guida | navigera | anvisa | kör) [mig]) till korsningen vid <Address>
+visa <POIType> i <CityName>
+(Leta efter | hitta | visa) ([intressepunkt | intressepunkter] <POIType> [i <CityName>] | intressepunkt | intressepunkter)
+visa intressepunkt <POIType> i närheten
+(Leta efter | hitta | visa) (närmaste) [intressepunkt | intressepunkter] <POIType> | [intressepunkt | intressepunkter] <POIType> (nära ( fordonet | bilen | mig | [min] nuvarande position))
+hjälp med röstinställningar
+hjälp [med] (röstkommandon | röstkommando | taligenkänning)
+hjälp med telefon
+hjälp med (telefon | telefonsamtal | samtal | telefonmeny | telefonkommandon)
+hjälp med media
+hjälp med (media | mediakommandon | mediaspelare | telefonmeny | telefonkommandon | spelare | musik)
+hjälp med radio
+hjälp med (radio | radiokanaler | radiostationer | radioinställningar | radiokommandon)
+hjälp med navigering
+hjälp med (att ställa in (destination | adress ) | navigeringsinställningar | options | setting | settings) hanna hanna
+hjälp med textmeddelande
+(SMS | meddelande | textmeddelanden | meddelanden | kort meddelande | korta meddelanden) | hanna
+hjälp med ruttanvisning
+hjälp med inställningar för ruttanvisning
+hjälp med intressepunkter
+hjälp med att hitta (intressepunkt | intressepunkter)
+berätta
+(berätta | visa mig)
+smarttelefon
+[hej] (smarttelefon | siri | svoice | ok google)
+media
+(media | musik | spela | lyssna på | ljudkälla)
+navigering
+navigering | (res | (guida | navigera | anvisa | kör) [mig]) till
+ring
+(ring | [(börja | starta | ring) [ett]] samtal [till] | telefon)
+korta meddelanden
+
+Intressepunkt
+(intressepunkt | intressepunkter)
+radio
+(radio | FM | DAB | AM)
+spela låt (<Title_USB> | <Title_iPod> | <Title_Jukebox>)
+[spela | lyssna på | välj] [ (låt | titel | låten | titeln )] (<Title_USB> | <Title_iPod> | <Title_Jukebox>)
+spela artist (<Artist_USB> | <Artist_iPod> | <Artist_Jukebox>)
+[spela | lyssna på | välj] [ artist | musik av] (<Artist_USB>| <Artist_iPod> | <Artist_Jukebox>)
+spela album (<Album_USB> | <Album_iPod> | <Album_Jukebox>)
+(spela | välj | lyssna till) [album | albumet] (<Album_USB>| <Album_iPod> | <Album_Jukebox>)
+navigera till <Address>
+(res | (guida | navigera | anvisa | kör) [mig]) till | ställ in  [ den nya adressen | ny adress | den nya destinationen | ny destination] <Address>
+navigera till <POI>
+
+
+
+ställ in kanal <ChannelName>
+[välj | ställ in | byt till ] (kanal | radiostation | station) [<ChannelName>]
+ställ in kanal <FMChannelName>
+[välj | ställ in | byt till ] (kanal | radiostation | station) [<FMChannelName>]
+ställ in kanal <DigitalChannel>
+[välj | ställ in | byt till] (kanal | radiostation | station) <DigitalChannel>
+ställ in förvalt nummer <PresetNumber>
+[välj | ställ in | byt till ] [förval | förvalt nummer] <PresetNumber>
+slå på ljudkälla <AudioInput>
+(starta | slå på | byt till | spela | välj | aktivera) [ljudkällan] <AudioInput>
+ställ in <FM_Frequency> FM
+[välj | ställ in | byt till (kanal | radiostation | station | frekvens)] <FM_Frequency> FM | FM-kanal | FM-radio | FM radiostation | frekvens hanna
+välj profil <UserProfileName>
+[ställ in | välj | aktivera] [profil | användarprofil] <UserProfileName>
+navigera till nylig destination <LastDestinations>
+(res | (guida | navigera | anvisa | kör) [mig]) till [min] (senaste | nyligaste) (destination | adress | kontakt) <LastDestinations>
+navigera till förvald adress <PreferredAddress>
+(res | (guida | navigera | anvisa | kör) [mig]) till (förvald (destination | adress | kontakt) | favoritdestination | favoritadress) <PreferredAddress>
+navigera till kontakt <Contact>
+(res | (guida | navigera | anvisa | kör) [mig]) (till | via) [kontakt] <Contact>
+ring <Contact>
+(ring | [(börja | starta | ring) [ett]] samtal [till] | telefon) <Contact>
+skicka kort meddelande till <Contact>
+[skicka] (snabba meddelanden | ( [ett kort] [text] meddelande) |SMS | MMS) to <Contact> hanna
+ring <phone_number>
+[ring [nummer] | [ring] telefon | telefonnummer] <phone_number>
+<Address>
+
+nej
+(nej | ingen aning | jag vet inte)
+välj <DisplayItemNo>
+[välj | öppna | ta] <DisplayItemNo>
+navigera till intressepunkt <POI> i <CityName>
+(res | (guida | navigera | anvisa | kör) [mig]) till [the] (POI | point of interest) <POI> (in | at) <CityName> hanna!
+visa intressepunkt <POI> i <CityName>
+(Leta efter | hitta | visa) ([intressepunkt | intressepunkter] <POIType> [i <CityName>] | intressepunkt | intressepunkter) hanna
+navigera till närliggande intressepunkt <POI>
+(res | (guida | navigera | anvisa | kör) [mig]) till korsningen vid <Address>
+visa närliggande intressepunkt <POI>
+
+navigera till intressepunk <POI> längs färdvägen
+(res | (guida | navigera | anvisa | kör) [mig]) till (([a] POI | POIs) [<POI>] | the POI <POI>) (along | on) ([the] route | the way) hanna
+visa intressepunkt <POI> längs färdvägen
+(Leta efter | hitta | visa) ([intressepunkt | intressepunkter] <POIType> [i <CityName>] | intressepunkt | intressepunkter) hanna
+navigera till intressepunkt <POI> vid destinationen
+(res | (guida | ta | navigera | anvisa | kör) [mig]) till (( intressepunkt | intressepunkter) [<POI>] (vid | nära [min]) destination | (intressepunkt | intressepunkter) [<POI>] (närmast) (min) destination)
+navigera till intressepunkt <POI> vid destinationen
+
+höj temperaturen
+gör det [<temperature>] varmare | höj (temperaturen | värmen) [<temperature>] | skruva upp temperaturen
+sänk temperaturen
+gör det [<temperature>] kallare | sänk (temperaturen | värmen) [<temperature>] | skruva ned temperaturen
+välj <DisplayItemNo>
+[välj | öppna | ta] <DisplayItemNo>
+navigera till <DisplayItemNo>
+(res | (guida | navigera | anvisa | kör) [mig]) till [intressepunkt] <DisplayItemNo>
+välj typ av intressepunkt i <DisplayItemNo>
+välj (intressepunkt | (typ | kategori) av intressepunkt i) <DisplayItemNo> | (intressepunkt | (typ | kategori) av intressepunkt i ) <DisplayItemNo> är okej
+nej, det här är en adress
+nej, det här är en adress
+navigera till (<Address> | <POI>)
+(res | (guida | ta | navigera | anvisa | kör) [mig]) till (<Address> | <POI>)
+navigera till <Address>
+(res | (guida | ta | navigera | anvisa | kör) [mig]) till (destination | adress) [<Address>]
+börja igen
+börja (igen | om)
+skicka
+skicka [SMS | meddelande |textmeddelande]
+nummer ett
+[(rad | radnummer) | nummer] ett
+nummer två
+[(rad | radnummer) | nummer] två
+nummer tre
+[(rad | radnummer) | nummer] tre
+nummer fyra
+[(rad | radnummer) | nummer] fyra
+nummer fem
+[(rad | radnummer) | nummer] fem
+hemma
+hemma
+jobbet
+[på] (jobbet | kontoret | arbetet)
+på mobilen
+[på [hans | hennes | deras] (mobiltelefon | mobil) | ( mobiltelefonen | mobilen )]
+andra
+[på [hans | hennes | deras]] (andra [telefon] | telefonen )
+ett
+två
+tre
+fyra
+fem
+sex
+sju
+åtta
+nio
+tio
+elva
+tolv
+tretton
+fjorton
+femton
+radio
+USB
+USB 1
+USB 2
+ipod
+ipod 1
+ipod 2
+CD
+aux
+jukebox
+strömmande bluetooth
+(strömmande ljud | bluetooth)
+video
+(oerfaren | nybörjare)
+expert
+Jag blir (sen | försenad)
+(blir | jag kommer att bli) sen
+lite sen
+(lite | en smula) sen
+(ganska | rätt) sen
+(väldigt | ganska | rätt) sen
+vänta inte på mig
+(fortsätt utan mig | vänta inte på mig)
+Jag kommer precis
+(ses nu | jag kommer nu | jag är här | jag kommer precis | jag har just kommit)
+i tid
+Jag kommer i tid
+blir kanske lite sen
+[Jag] (kanske blir | kan bli) (lite | en smula) sen
+jag kan bli (ganska | rätt) sen
+[Jag] (kanske blir | kan bli) (lite | mycket ) sen
+vänta på mig
+vänta på mig
+Jag är inte tillgänglig
+Jag är (inte tillgänglig | otillgänglig)
+Jag kör bil
+Jag kör bil för tillfället
+ring mig igen senare
+ring [mig] [igen | tillbaka] senare [tack] | [snälla] ring [igen | tillbaka] senare
+Jag ringer tillbaka
+Jag ringer tillbaka [snart | strax | senare]
+svåra förhållanden
+dålig telefonförbindelse
+Jag lämnar jobbet
+[Jag] går [precis] från jobbet | [Jag har] [precis] gått från jobbet
+Jag går hemifrån
+[Jag ] går [precis] hemifrån | [Jag har] [precis] gått hemifrån
+halt väglag
+
+okej, tack
+([okej] tack så mycket | tack | [det] låter bra | uppskattar det)
+ett
+nummer ett
+två
+nummer två
+tre
+nummer tre
+
+
+flygplats
+nöjesfält
+strand
+skönhet
+skönhetssalong | hårfrisör | frisör
+busstation
+camping
+bil
+bilförsäljare | bilreparatör | bilreparation | biltvätt | bilprovning
+bank och kontanter
+bank | bankomat | uttagsautomat
+kasino
+andaktslokal
+kyrka | tempel synagoga | moské
+bio | biograf
+utbildning
+universitet | högskola | grundskola | gymnasieskola | lågstadium | högstadium | gymnasium
+företag
+musik och teater
+musik | teater | konserthall | musikcenter | opera
+utställning
+domstolsbyggnad | tingshus
+
+
+kultur
+kulturcentrum | bibliotek | museum
+hälsa
+doktor | sjukhus | poliklinik | klinik | lasarett
+regeringsplats
+regeringskontor
+färja
+färjor | färjeterminal
+brandstation
+gränsövergång
+gränsövergång | gräns
+sport
+fitness | sportstadium | sportarena | gym | arena
+hotell
+(hotell | motell | lågprishotell | B & B | gästgiveri | vandrarhem)
+fritid
+berg
+bergspass | bergstopp
+nöjesliv
+nöjesliv | klubb | nattklubb
+parkering
+öppen parkeringsplats | öppet parkeringsgarage
+friluftsområde
+friluftsområde | park
+bensinstation
+drivmedelsstation | bensinstation | laddplats för elbil | laddstation
+apotek
+polisstation
+postkontor
+tågstation
+tåg | station | tågstation | tunnelbana | tunnelbanestation | spårvagn
+biluthyrning
+biluthyrning
+rastplats
+restaurang och pub
+restaurang | pub | café | snabbmat | bar
+utsiktsplats
+affärer
+shoppingcenter
+shoppinggata | galleria | shoppinggalleria | stormarknad | mataffär | affär
+turism
+turistattraktion | turistinformation | turistcenter
+lastbil
+lastbilsstopp | lastbilsservice
+vingård
+hamn
+
+zoo | djurpark
+peugeot
+peugeothandlare | peugeotgarage
+Citroën
+Citroënhandlare | Citroëngarage
+Toyota
+toyotahandlare | toyotagarage
+Opel
+opelhandlare | opelgarage
+kontakt
+lite
+lite | ganska
+mycket
+mycket
+För att börja, säg ett kommando efter tonen
+Jag har svårt att förstå vad du sa. Var god försök igen.
+Ursäkta, jag har svårt att förstå vad du sa.
+Ursäkta, den här funktionen är inte tillgänglig för tillfället. Var god försök med något annat.
+För att välja en förvald kanal, säg något i stil med, ”ställ in förvald kanal nummer fem".
+För att välja en kanal via namnet, säg något i stil med ”ställ in kanal P3".
+Du kan välja en ljudkälla genom att säga ”slå på ljudkälla" eller ”slå på ljudkälla" följt av namnet. Till exempel, ”slå på ljudkälla radio", eller ”slå på ljudkälla Bluetooth". Du kan också säga, ”slå på radio".
+Försök ställa in ljudkällan igen.
+Du kan säga ”ställ in dialoginställning till expert" eller ”ställ in dialoginställning till nybörjare".
+För att starta ruttanvisning, säg bara ”starta ruttanvisning”
+För att starta ruttanvisning, säg bara ”starta ruttanvisning”
+För att ställa in radiofrekvens, säg något i stil med ”ställ in 98.5 FM" eller ”byt till 98.5 FM".
+För att ställa in radiofrekvens, säg något i stil med ”ställ in 693 AM" eller ”byt till 693 AM".
+För att välja användarprofil, säg något i stil med ”välj användare 1”, eller ”välj profil Erik”.
+
+<AudioInput> är på.
+Röstdialog är konfigurerad till <DialogMode>.
+Du lyssnar på <SongName> av <ArtistName>.
+<Province> vald.
+För det här landet, säg adresser med gatunamnet först, och sedan namnet på staden, du behöver inte säga numret på gatan.
+För det här landet, säg adresser med namnet på staden först, och sedan namnet på gatan, du behöver inte säga numret på gatan.
+Återstående distans är <distance> <units>.
+Återstående tid är <hours> timmar och <minutes> minuter.
+Återupptagit navigering.
+Uppskattad ankomsttid är <time>.
+Navigering avbruten
+Ställt in <FM_Frequency> FM.
+Ställt in <AM_Frequency> AM.
+Ställt in användarprofil. Hej!
+Läser senaste meddelandet.
+Navigera till <Address>. Stämmer det?
+För att ställa in en nylig destination, säg något i stil med ”navigera till nylig destination”, och sedan adressen eller kontaktnamnet. Till exempel: ”navigera till nylig destination, Storgatan".
+Du kan säga något i stil med ”navigera till förvald adress", följt av adressen. Till exempel, ”navigera till förvald adress, Jobbet".
+Välj ett kort meddelande från skärmen.
+Välj hemma, jobb, mobil, eller annat. Eller, ”välj rad 3".
+Säg ”navigera till kontakt" följt av namnet. Till exempel, ”navigera till kontakt, Erik Andersson".
+För att skicka ett kort meddelande, säg ”skicka kort meddelande till"; och sedan namnet, följt av rubriken på det korta meddelandet.  Till exempel ”skicka kort meddelande till Erik Andersson, Jag blir sen". Titta på SMS-menyn efter rubriker som stöds.
+Ring <Contact> <phone_types>. Stämmer det?
+Skicka kort meddelande till <Contact>. Stämmer det?
+För att ringa ett telefonsamtal, säg ”ring”, följt av kontaktnamnet, till exempel: ”Ring Erik Andersson". Eller, för att ringa via telefonnummer, säg ”ring" följt av telefonnumret. Till exempel, ”Ring 08-35 35 35”. Du kan också kolla din röstbrevlåda genom att säga: ”ring röstbrevlåda".
+Det finns inget sparat telefonnummer för den kontakten.
+Ringer <Contact>.
+Ringer kontakt <Contact> <phone_types>
+Skickar meddelande till <Contact> <SMS_templates>.
+Skickar meddelande till <Contact> [<phone_types>] [<SMS_templates>]
+Det finns ingen sparad adress för den kontakten.
+Och vad kan jag hjälpa dig med nu?
+Jag kan inte hitta något i listan som matchar det.
+Meddelande från <Contact>.
+Ursäkta, jag förstod inte det där. Säg till exempel ”spela artist Madonna”, ”spela album Thriller”, eller spela låt ”Hey Jude”
+Spelar <AllMusic>.
+Spelar <Song>.
+Spelar <Artist>.
+Spelar <Album>.
+Säg ”spela låt" eller ”lyssna på låt”, och sedan namnet på låten som du vill lyssna på. Till exempel, ”spela låt Hey Jude”, eller ”lyssna på låt ”Hey Jude".
+Försök igen genom att säga ”spela låt”, och låtens namn.
+Säg ”spela artist" eller ”lyssna på artist”, och sedan namnet på artisten som du vill lyssna på. Till exempel, ”spela artist Madonna”, eller ”lyssna på artist Madonna".
+Försök igen genom att säga ”spela artist”, och artistens namn.
+Säg ”spela album" eller ”lyssna på album”, och sedan namnet på det album du vill lyssna på. Till exempel, ”spela album Thriller”, eller ”lyssna på album Thriller".
+Försök igen genom att säga ”spela album”, och albumets namn.
+Starta navigering till <Address>? Säg " ja" eller ”nej".
+Ersätta den gamla destinationen eller lägga till en trafikplats?
+Beräknar rutt till <Address>.
+Välj en rutt.
+För att planera en rutt, säg ”navigera till adress”, och säg sen adressen. Till exempel, ”navigera till adress Storgatan 11, Stockholm”.
+För att navigera till intressepunkt, säg ”navigera till intressepunkt" följt av typ av intressepunkt, och stadens namn. Om du vet namnet på intressepunkten kan du säga det också. Du kan till exempel säga: ”navigera till intressepunkt Arlanda flygplats i Stockholm".
+Ursäkta, jag förstod inte det där. Försök ställa in intressepunkt igen.
+För att navigera till intressepunkt, säg ”navigera till intressepunkt" följt av typ av intressepunkt och stadens namn. Om du vet namnet på intressepunkten kan du säga det också. Du kan till exempel säga: ”navigera till intressepunkt Peugeothandlare i Västerås”, eller ”navigera till intressepunkt Arlanda flygplats i Stockholm".
+Ursäkta, jag förstod inte det där. Försök ställa in intressepunkt igen.
+För att navigera till intressepunkt, säg ”navigera till intressepunkt" följt av typ av intressepunkt och stadens namn. Om du vet namnet på intressepunkten kan du säga det också. Du kan till exempel säga: ”navigera till intressepunkt Citroën-handlare i Västerås”, eller ”navigera till intressepunkt Arlanda flygplats i Stockholm".
+Ursäkta, jag förstod inte det där. Försök ställa in intressepunkt igen.
+För att hitta en intressepunkt kan du säga saker som ”visa hotell i Norrköping”, eller ”visa bensinstationer i närheten”.
+Vart vill du navigera? Välj en rad.
+Vart vill du navigera?
+Säg ”ring" och sedan telefonnumret. Till exempel, ”ring 08-35 35 35".
+[ESC]\tn=phone\<Number> [ESC]\tn=normal\. Säg ”ring"; eller så kan du knappa in fler siffror.
+Ringer [ESC]\tn=phone\<phone_number> [ESC]\tn=normal\ .
+kilometer
+kilometer
+mile
+mile
+meter
+yards
+yard
+Återstående tid är <hours> timmar och 1 minut.
+Återstående tid är <hours> timmar.
+Återstående tid är 1 timma.
+Återstående tid är <minutes> minuter.
+Återstående tid är 1 minut.
+Återstående tid är 1 timma och 1 minut.
+Ursäkta, jag hörde inte namnet. Repetera kommandot.
+För att lyssna på musik, säg ”spela”, följt av ”låt", ”adress", eller ”album”, och sedan namnet. Till exempel: ”spela låt Hey Jude", ”spela artist Madonna" eller ”spela album Thriller". Du kan också säga ”spela Thriller av Michael Jackson".
+Ursäkta, jag förstod inte det där. Försök säga vad du vill lyssna på igen. Till exempel: ”spela låt Hey Jude", ”spela artist Madonna" eller ”spela album Thriller".
+Ringer röstbrevlåda.
+Ställt in <ChannelName>.
+Ställt in <FMChannelName> FM.
+Ställt in <DigitalChannel>.
+Ställt in förvalt nummer <PresetNumber>.
+Hur kan jag hjälpa dig med musik?
+Hur kan jag hjälpa dig med navigering?
+Hur kan jag hjälpa dig med inställningar?
+Hur kan jag hjälpa dig med telefon?
+Hur kan jag hjälpa dig med att skicka textmeddelanden?
+Hur kan jag hjälpa dig med intressepunkter?
+Hur kan jag hjälpa dig med radio?
+Vilken låt vill du spela?
+Vilken artist vill du spela?
+Vilket album vill du spela?
+Vilken adress vill du navigera till?
+Vilken intressepunkt vill du navigera till?
+Vilka intressepunkter vill du att jag ska visa på kartan?
+Vilken intressepunkt i närheten vill du navigera till?
+Vilken intressepunkt längs färdvägen vill du navigera till?
+Vart vill du navigera?
+Vilka intressepunkter i närheten vill du att jag ska visa på kartan?
+Vilka intressepunkter längs färdvägen vill du att jag ska visa på kartan?
+Vilka intressepunkter vid destinationen vill du att jag ska visa på kartan?
+Vilken kanal vill du ställa in?
+Vilken förvald radiokanal vill du ställa in?
+Vilken ljudkälla vill du välja?
+Vilken radiofrekvens vill du ställa in?
+Vilken profil vill du välja?
+Vilken av dina förvalda adresser vill du navigera till?
+Vilken av dina senaste adresser vill du navigera till?
+Vilken kontakt vill du navigera till?
+Vilken kontakt vill du ringa?
+Vilken kontakt vill du skicka SMS till?
+Säg det telefonnummer du vill ringa.
+Skickar meddelande till <Contact> <SMS_templates>.
+Navigerar hem.
+Navigerar till jobbet.
+Bara säg adressen. Till exempel, ”Storgatan 11, Stockholm”.
+Vill du ange en korsning till <StreetName1>? I sådana fall, säg namnet på den korsande gatan, annars, säg ”nej".
+Välj namnet på en korsande gata.
+Navigera till korsningen <StreetName1> and <StreetName2>. Stämmer det?
+Beräknar rutt till korsningen <StreetName1> och <StreetName2>.
+Beräknar rutt till <POI> <Address>.
+Vilken <POI> vill du navigera till? Välj en rad.
+Visar <POI> i <CityName>.
+Visar intressepunkt <POI> längs färdvägen.
+Visar <POI> i närheten.
+Visar <POI> vid destinationen.
+Temperaturen ändrad.
+Justera volymen på röstpromptarna.
+Vilken kontakt vill du ringa? Välj en rad.
+Vilken kontakt ska jag välja?
+Vilken vill du spela? Välj en rad.
+Vilken vill du spela?
+Vart vill du navigera till? Välj en rad.
+Vart vill du navigera till?
+Vilken intressepunkt vill du hitta? Välj en rad.
+Vilken intressepunkt vill du hitta?
+Välj en rad på skärmen. Om du bara kan hitta staden, säg något i stil med ”Välj staden på rad 3".
+Välj en rad på skärmen. Om du bara kan hitta gatan, säg något i stil med Välj gatan på rad 2".
+Välj en rad på skärmen. Om du bara kan hitta typen av intressepunkt, säg något i stil med ”Välj typ av intressepunkt på rad 2".
+Vem vill du kontakta?
+Vad vill du spela?
+Börja diktera ditt meddelande.
+Ditt meddelande till <Contact> <phone_types>; <Dictated_Text>. ”Skicka", "börja om" eller "avbryt"?
+Skickar meddelande till <Contact>.
+Vart vill du åka?
+Välj en rad.
+Det finns flera saker jag kan hjälpa dig med. Du kan säga: ”hjälp med telefon", ”hjälp med navigering", ”hjälp med media" eller ”hjälp med radio". För en översikt över hur man använder röstkommandon kan du säga ”hjälp med röstkommandon". 
+Tryck på talknappen och säg det du vill efter tonen. Kom ihåg att du när som helst kan avbryta mig genom att trycka på den här knappen. Om du trycker på knappen igen medan jag väntar på att du ska prata, avslutar den samtalet. Om du behöver börja om, säg ”avbryt”. Om du vill ångra något, säg ”ångra". Och för att när som helst få information och tips, säg bara ”hjälp". Om du ber mig att göra något och jag saknar information som jag behöver, kommer jag att ge dig exempel eller gå igenom det steg för steg. Det finns mer information tillgänglig om du har inställningen ”nybörjare”. Du kan välja dialoginställningen ”expert” när du känner dig bekväm med systemet.
+För att ringa ett telefonsamtal, säg ”ring”, följt av kontaktnamnet, till exempel: ”Ring Erik Andersson". Du kan också inkludera typ av telefon, till exempel ”Ring Erik Andersson hemma”. För att ringa ett samtal med hjälp av telefonnummer, säg ”ring” följt av telefonnumret, till exempel, ring 08-35 35 35”. Du kan kontrollera din röstbrevlåda genom att säga ”ring röstbrevlåda” För att skicka ett SMS, säg ”skicka snabbt meddelande till” följt av kontakten, och sedan rubriken på det korta meddelandet du vill skicka. Till exempel, ”skicka kort meddelande till Erik Andersson, Jag blir sen”. För att visa samtalslista, säg ”visa samtalslista”. För mer information om SMS kan du säga ”hjälp med textmeddelande”.
+Du kan välja en ljudkälla genom att säga ”slå på ljudkälla" eller ”slå på ljudkälla" följt av namnet. Till exempel, ”slå på ljudkälla, strömmande bluetooth, eller ”slå på ljudkälla, radio”. Använd kommandot ”spela” för att specificera vilken typ av musik du vill lyssna på. Du kan välja mellan ”låt”, ”artist” eller ”album”. Bara säg något i stil med ”spela artist Madonna”, ”spela låt, Hey Jude”, eller ”spela album Thriller”.
+Du kan välja en radiostation genom att säga ”ställ in” och stationens namn eller frekvens. Till exempel ”ställ in kanal P3”, eller ”ställ in ”98.5 FM”. För att lyssna på en förvald radiostation, säg till exempel ”ställ in förval nummer fem”.
+För att planera en rutt, säg ”navigera till” följt av adressen, kontaktnamnet eller korsningen. Till exempel, ”navigera till adress Storgatan 11, Stockholm”, ”navigera till kontakt Erik Andersson”, eller ”navigera till korsningen vid Storgatan, Stockholm”. Du kan specificera om det är en förvald adress, eller en intressepunkt. Säg till exempel ”navigera till förvald adress, Golfklubben, eller ”navigera till intressepunkt Arlanda flygplats i Stockholm”. Eller så kan du säga ”navigera hem”. För att se intressepunkter på en karta kan du säga till exempel ”visa intressepunkt hotell i Västerås”. För mer information säg ”hjälp med intressepunkter”, eller ”hjälp med ruttanvisning”.
+För att lyssna på ditt senaste meddelande, kan du säga ”lyssna på det senaste meddelandet”. När du vill skicka ett meddelande, säg bara något i stil med ”skicka kort meddelande till Erik Andersson, jag blir sen”.
+För att se intressepunkter på en karta, kan du säga saker som ”visa hotell i Stockholm”, ”visa parkering i närheten” ”visa hotell vid destination” eller ”visa bensinstation längs färdvägen”. Om du föredrar att navigera direkt till en intressepunkt kan du säga ”navigera till bensinstation i närheten”. Om du upplever att du inte blir förstådd kan du pröva att säga order ”intressepunkt” före intressepunkten. Säg till exempel ”navigera till intressepunkt restaurang vid destination”.
+Du kan säga ”avsluta” eller ”återuppta ruttanvisning”. För att få information om din nuvarande rutt kan du säga ”berätta återstående tid”, ”återstående distans” eller ”ankomsttid”. För att lära dig fler kommandon, försök genom att säga ”hjälp med navigering”.
+För att välja en kontakt, säg något i stil med ”välj rad tre”. För att förflytta dig i listan, säg ”nästa sida” eller ”föregående sida”. Du kan ångra ditt senaste val och börja om genom att säga ”ångra” , eller säg ”avbryt” för att avbryta.
+Säg ”ja” om jag förstod rätt. Annars säg ”nej” och så börjar vi om.
+Säg ”ring” eller ”skicka kort meddelande till”, och välj sedan en rad från listan. För att förflytta dig i listan som visas på skärmen kan du säga ”gå till början”, ”gå till slutet”, ”nästa sida” eller ”föregående sida”. Du kan ångra ditt senaste val och börja om genom att säga ”ångra”, eller säg ”avbryt” för att avbryta.
+Från listan av korta meddelanden, säg namnet på det du vill skicka. För att förflytta dig i listan kan du säga ”gå till början”, ”gå till slutet”, ”nästa sida”, eller ”föregående sida”. Du kan ångra ditt senaste val och börja om genom att säga ”ångra” , eller säg ”avbryt” för att avbryta.
+Om din kontakt har flera telefonnummer kan du välja bland ”hemma” ”jobbet” ”på mobilen” eller ”annat”. Du kan ångra ditt senaste val och börja om genom att säga ”ångra”, eller säg ”avbryt” för att avbryta.
+För att välja vad du vill spela, börja genom att säga ”spela” och sedan det du vill spela. Till exempel, säg ”spela låt Hey Jude”, ”spela rad 3”, eller ”välj rad 2”. Du kan ångra ditt senaste val och börja om genom att säga ”ångra” , eller säg ”avbryt” för att avbryta.
+Jag är inte säker på vad du vill spela. Säg ”spela” och sedan en låttitel, en albumtitel eller artistnamn. Till exempel, säg ”spela låt Hey Jude”, ”spela artist Madonna” eller spela album ”Thriller”. För att välja en rad från skärmen, säg ”välj rad två” För att förflytta dig i en lista som visas på skärmen kan du säga ”nästa sida” eller ”föregående sida”. Du kan ångra ditt senaste val och börja om genom att säga ”ångra” , eller säg ”avbryt” för att avbryta.
+För att välja en destination och starta navigering, säg något i stil med ”navigera till rad två” eller ”välj rad tre”. Om du inte kan hitta destinationen, men staden stämmer, säg något i stil med ”välj staden på rad tre”. Om du inte kan hitta destinationen, men gatan stämmer, säg något i stil med ”välj gatan på rad fyra”. 
+För att välja en destination, säg något i stil med ”navigera till rad tre”, eller ”välj rad två”. Om du inte kan hitta destinationen, men gatan stämmer, säg något i stil med ”välj staden på rad tre”. För att förflytta dig i listan kan du säga ”gå till början”, ”gå till slutet”, ”nästa sida”, eller ”föregående sida”. Du kan ångra ditt senaste val och börja om genom att säga ”ångra”, eller säg ”avbryt” för att avbryta.
+För att välja en destination, säg något i stil med ”navigera till rad tre”, eller ”välj rad två”. För att förflytta dig i listan kan du säga ”gå till början”, ”gå till slutet”, ”nästa sida”, eller ”föregående sida”. Du kan ångra ditt senaste val och börja om genom att säga ”ångra” , eller säg ”avbryt” för att avbryta.
+För att välja en intressepunkt, säg något i stil med ”välj rad 2”. Om du inte kan se den intressepunkt du letar efter, kan du filtrera mer genom att säga något i stil med ”välj intressepunkt i rad 2”, eller ”välj staden i rad 3”. Du kan också förflytta dig i listan genom att säga ”nästa sida” eller ”föregående sida”.
+Säg ”ring” för att ringa numret. Om du vill radera den sista delen av numret, säg ”radera”. För att ange numret igen från början, säg ”börja om”.
+För att välja en intressepunkt, säg till exempel ”välj rad två”. Du kan skrolla genom listan genom att säga ”nästa sida” eller ”föregående sida”.
+För att lyssna på ditt senaste meddelande, kan du säga ”lyssna på det senaste meddelandet”. När du vill skicka ett meddelande, säg bara något i stil med ”skicka kort meddelande till Erik Andersson, jag blir sen”.
+För att se intressepunkter på en karta, kan du säga saker som ”visa intressepunkt hotell i Stockholm”, visa intressepunkt hotell vid destinationen” eller visa intressepunkt bensinstation längs vägen”. Om du föredrar att navigera direkt till en intressepunkt kan du säga ”navigera till intressepunkt bensinstation i närheten” eller ”navigera till intressepunkt restaurang Glada Kocken i Västerås”.
+För att planera en rutt, säg ”navigera till” följt av adressen, kontaktnamnet eller korsningen. Till exempel, ”navigera till adress Storgatan 11, Stockholm”, ”navigera till kontakt Erik Andersson”, eller ”navigera till korsningen vid Storgatan, Stockholm”. Du kan specificera om det är en förvald adress, eller en intressepunkt. Säg till exempel ”navigera till förvald adress, Golfklubben, ”navigera till intressepunkt Arlanda flygplats i Stockholm”, eller ”navigera till Skansen i Stockholm”. Eller så kan du säga ”navigera hem”. För att se intressepunkter på en karta kan du säga till exempel ”visa intressepunkt hotell i Västerås”. För mer information säg ”hjälp med intressepunkter”, eller ”hjälp med ruttanvisning”.
+Ursäkta, den ljudkällan är inte tillgänglig för tillfället.
+Ursäkta, den inställningen är inte tillgänglig för tillfället.
+Ursäkta, navigering är inte aktivt för tillfället.
+Ursäkta, det finns ingen tillgång till internet för tillfället.
+Anslut en telefon med hjälp av bluetooth.
+Ursäkta, det finns ingen tillgång till nätverk för tillfället.
+Ursäkta, det finns inga meddelanden att läsa för tillfället.
+Ursäkta, det finns ingen tillgänglig information om vad som spelas.
+Ursäkta, det finns inga ljudkällor som tillåter val via låtnamn för tillfället.
+Ursäkta, det finns inga ljudkällor som tillåter val via artistnamn för tillfället.
+Ursäkta, det finns inga ljudkällor som tillåter val via albumnamn för tillfället.
+Ursäkta. För det här landet är det inte möjligt att lägga till destinationer med hjälp av tal.
+För den här typen av SMS måste du först aktivera navigering.
+Ursäkta, men adressen till destinationen har inte ställts in.
+Ursäkta, det finns inga tidigare destinationer.
+Ursäkta, det finns inga tidigare inställda destinationer.
+Ursäkta, det finns inga tillgängliga alternativ för det.
+Numret har inte ställts in ännu.
+Ursäkta, alternativen kan inte visas.
+Ursäkta, det kommandot stöds inte.
+Ursäkta, den här kontakten har inget nummer kopplat till sig.
+Ursäkta, den här kontakten har ingen adress kopplad till sig.
+Ursäkta, den låten är inte tillgänglig.
+Ursäkta, det är inte tillgängligt
+Ursäkta, resultatlistan är tom.
+Ursäkta, mediaenheten laddas.
+Ursäkta, det är för många låtar. Ta bort en av de anslutna mediaenheterna.
+Ursäkta, servern svarar inte. Vänta!
+Ursäkta, servern är inte tillgänglig. Här är resultaten från bilens interna navigering.
+Ursäkta, den här funktionen är inte tillgänglig ännu.
+Den nuvarande anslutningsinställningen tillåter inte tillgång till det kommandot.
+Ursäkta, den här funktionen kommer att bli tillgänglig i en kommande uppdatering.
+Ursäkta, den här funktionen är tillfälligt inte tillgänglig.
+Ursäkta, den här funktionen är för tillfället inte tillgänglig.
+Ursäkta, den valda typen av telefon är inte tillgänglig för nuvarande kontakt.
+Ursäkta, servern är inte tillgänglig.
