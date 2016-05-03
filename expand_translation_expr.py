@@ -48,7 +48,7 @@ def read_stdin():
         line = line.strip()
         no = no+1
         gens = generate(line)
-        print "%d\t%s\t%d string(s)" % (no,line,len(gens))
+        print "%d\n%s\n%d string(s)\n" % (no,line,len(gens))
         for gen in gens:
             print gen
         
