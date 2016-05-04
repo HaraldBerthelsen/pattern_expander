@@ -47,10 +47,12 @@ def read_stdin():
     for line in lines:
         line = line.strip()
         no = no+1
+        if re.search("[a-zA-Z]", line):
+            print("WARNING: Latin characters in line %d: %s" % (no, line))
         gens = generate(line)
-        print "%d\n%s\n%d string(s)\n" % (no,line,len(gens))
+        print("%d\n%s\n%d string(s)\n" % (no,line,len(gens)))
         for gen in gens:
-            print gen
+            print(gen)
         
 
 
