@@ -61,6 +61,8 @@ def test():
 def read_stdin():
     lines = sys.stdin.readlines()
     no = 0
+    prevline = "first line"
+
     for line in lines:
         line = line.strip()
 
@@ -90,6 +92,33 @@ def read_stdin():
             #sys.exit()
 
         gens = generate(line)
+
+
+        check_prev = False
+        if check_prev:
+            #Check that prevline is included, if line contains expansion pattern
+            #This should not always happen, but most of the time.. (?)
+            if re.search(r"\[|\(",line):
+                found = False
+                for gen in gens:
+                    
+                    p = prevline.decode("utf-8")
+                    p = p.strip()
+                    p = re.sub(r"^ +",r"",p)
+                    p = re.sub(r" +$",r"",p)
+                    
+
+                    print("COMPARING\n#%s#\n%s\n" % (p, gen.strip()))
+                    #sys.exit()
+                    if p == gen.strip():
+                        found = True
+                    if found == False:
+                        print("WARNING: main not in expanded\n%s" % prevline)
+                        sys.exit()
+
+            prevline = line
+        #end if check_prev
+
         print("%d\n%s\n%d string(s)\n" % (no,line,len(gens)))
         for gen in gens:
             print(gen)
