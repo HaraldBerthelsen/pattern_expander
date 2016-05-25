@@ -94,29 +94,66 @@ def read_stdin():
         gens = generate(line)
 
 
-        check_prev = False
+        check_prev = True
         if check_prev:
             #Check that prevline is included, if line contains expansion pattern
             #This should not always happen, but most of the time.. (?)
-            if re.search(r"\[|\(",line):
-                found = False
-                for gen in gens:
-                    
-                    p = prevline.decode("utf-8")
-                    p = p.strip()
-                    p = re.sub(r"^ +",r"",p)
-                    p = re.sub(r" +$",r"",p)
-                    
+            #only do this when the current linenr is even (odd: main, even: extended)
+            #and use this list to ignore some specific lines 
+            ignore_lines = [222,326,384,388,390,406,410,416,418,420,422]
+            if re.search(r"\[|\(",line) and (no % 2 == 0) and no not in ignore_lines:
 
-                    print("COMPARING\n#%s#\n%s\n" % (p, gen.strip()))
-                    #sys.exit()
-                    if p == gen.strip():
-                        found = True
+            #not only even
+            #if re.search(r"\[|\(",line) and no not in ignore_lines:
+                found = False
+
+                old_version = False
+                if old_version:
+                    for gen in gens:
+
+                        p = prevline.decode("utf-8")
+                        p = p.strip()
+                        p = re.sub(u"[^\u0627-\u064aa-zåäö]",r"",p)
+                        
+                        g = gen.strip()
+                        g = re.sub(u"[^\u0627-\u064aa-zåäö]",r"",g)
+
+                        #print("COMPARING\n#%s#\n#%s#\n" % (p, g))
+                        #sys.exit()
+                        if p == g:
+                            found = True
                     if found == False:
-                        print("WARNING: main not in expanded\n%s" % prevline)
-                        sys.exit()
+                        print("WARNING line %d: main not in expanded\n%s" % (no,prevline))
+                        #sys.exit()
+
+                else:
+                    #also expand prevline in case it has an expansion pattern
+                    #persian line 41 for instance
+                    for prevline in prevgens:                            
+                        found = False
+                        for gen in gens:
+
+                            #p = prevline.decode("utf-8")
+                            p = prevline
+                            p = p.strip()
+                            p = re.sub(u"[^\u0627-\u064aa-zåäö]",r"",p)
+                        
+                            g = gen.strip()
+                            g = re.sub(u"[^\u0627-\u064aa-zåäö]",r"",g)
+
+                            #print("COMPARING\n#%s#\n#%s#\n" % (p, g))
+                            #sys.exit()
+                            if p == g:
+                                found = True
+                        if found == False:
+                            print("WARNING line %d: main not in expanded\n%s" % (no,prevline))
+                        #sys.exit()
+
+
+
 
             prevline = line
+            prevgens = gens
         #end if check_prev
 
         print("%d\n%s\n%d string(s)\n" % (no,line,len(gens)))
