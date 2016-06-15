@@ -60,6 +60,13 @@ def test():
 
 def read_stdin():
     lines = sys.stdin.readlines()
+    result = process(lines)
+    for line in result:
+        print(line)
+
+
+def process(lines):
+    result = []
     no = 0
     prevline = "first line"
 
@@ -123,7 +130,9 @@ def read_stdin():
                         if p == g:
                             found = True
                     if found == False:
-                        print("WARNING line %d: main not in expanded\n%s" % (no,prevline))
+                        #print("WARNING line %d: main not in expanded\n%s" % (no,prevline))
+                        result.append(u"WARNING line %d: main not in expanded" % (no,))
+                        result.append(u"%s" % (prevline,))
                         #sys.exit()
 
                 else:
@@ -146,7 +155,9 @@ def read_stdin():
                             if p == g:
                                 found = True
                         if found == False:
-                            print("WARNING line %d: main not in expanded\n%s" % (no,prevline))
+                            #print("WARNING line %d: main not in expanded\n%s" % (no,prevline))
+                            result.append(u"WARNING line %d: main not in expanded" % (no,))
+                            result.append(u"%s" % (prevline,))
                         #sys.exit()
 
 
@@ -156,12 +167,16 @@ def read_stdin():
             prevgens = gens
         #end if check_prev
 
-        print("%d\n%s\n%d string(s)\n" % (no,line,len(gens)))
+        #print("%d\n%s\n%d string(s)\n" % (no,line,len(gens)))
+        result.append(u"%d" % (no,))
+        result.append(u"%s" % (line,))
+        result.append(u"%d string(s)" % (len(gens),))
         for gen in gens:
-            print(gen)
-        
+            #print(gen)
+            result.append(gen)
+    return result    
 
-
-#test()
-read_stdin()
+if __name__ == "__main__":
+    #test()
+    read_stdin()
 

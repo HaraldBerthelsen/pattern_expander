@@ -9,17 +9,15 @@
 <h1></h1>
 
 <form action="." method="POST">
-<input type="text" name="text" value="{{ text }}" size="200"></input>
+<textarea name="text" value="{{ text }}" rows="20" cols="200"></textarea>
 <input type="submit" name="my-form" value="Send">
 </form>
 
 <div id="result">
-    {% for gens in data %}
-    {% for item in gens %}
+    {% for line in data %}
   <p>
-       {{ item }}
+       {{ line }}
   </p>
-    {% endfor %}
     {% endfor %}
 
   </div>
@@ -30,5 +28,5 @@
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Thu Apr 28 11:37:18 CEST 2016 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Wed Jun 15 16:45:06 CEST 2016 <!-- hhmts end -->
 </body> </html>
