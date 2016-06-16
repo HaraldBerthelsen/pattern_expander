@@ -16,7 +16,7 @@ def generate(regexp):
     try:
         gens = list(exrex.generate(regexp))
     except:
-        print "ERROR in %s: %s %s" % (regexp, sys.exc_info()[0], sys.exc_info()[1])
+        print("ERROR in %s: %s %s" % (regexp, sys.exc_info()[0], sys.exc_info()[1]))
         gens = []
         #sys.exit()
     
@@ -49,17 +49,21 @@ def generate(regexp):
 
 def test():
 
-    test = "(ring | [(börja | starta | ring) [ett]] samtal [till] | telefon)"
+    test = u"(ring | [(börja | starta | ring) [ett]] samtal [till] | telefon)"
     #test = "[en] bil | [ett] tåg"
     
     gens = generate(test)
     for gen in gens:
-        print gen
+        print(gen)
         
 
 
 def read_stdin():
-    lines = sys.stdin.readlines()
+
+    import codecs
+    char_stream = codecs.getreader("utf-8")(sys.stdin)
+    #lines = sys.stdin.readlines()
+    lines = char_stream.readlines()
     result = process(lines)
     for line in result:
         print(line)
@@ -177,6 +181,6 @@ def process(lines):
     return result    
 
 if __name__ == "__main__":
-    #test()
-    read_stdin()
+    test()
+    #read_stdin()
 
