@@ -174,7 +174,10 @@ def process(lines):
         #print("%d\n%s\n%d string(s)\n" % (no,line,len(gens)))
         result.append(u"%d" % (no,))
         result.append(u"%s" % (line,))
-        result.append(u"%d string(s)" % (len(gens),))
+        if len(gens) < 2:
+            result.append(u"%d string generated:" % (len(gens),))
+        else:
+            result.append(u"%d strings generated:" % (len(gens),))
         for gen in gens:
             #print(gen)
             result.append(gen)
