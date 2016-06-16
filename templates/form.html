@@ -51,7 +51,8 @@ function clearResult() {
 <h1></h1>
 
 <form action="." method="POST">
-<textarea id="input" name="text" rows="20" cols="200" dir="{{ direction }}">{{ initial_text }}</textarea>
+<textarea id="input" name="text" rows="20" cols="100" dir="{{ direction }}">{{ initial_text }}</textarea>
+<br>
 <input type="submit" name="my-form" value="Expand">
 <label><input type="checkbox" name="direction" id="cbox1" value="rtl" onchange="toggleDirection();">Right-to-left</label>
 <input type="button" value="Clear" onclick="clearInput();clearResult();">
@@ -82,5 +83,5 @@ if ( dir === "rtl" ) {
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Thu Jun 16 11:03:13 CEST 2016 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Thu Jun 16 11:13:42 CEST 2016 <!-- hhmts end -->
 </body> </html>
