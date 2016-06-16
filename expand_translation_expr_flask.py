@@ -26,10 +26,16 @@ def form_post():
     if 'direction' in request.form:
         direction = request.form['direction']
 
+    compAlt = False
+    compAltChecked = ""
+    if 'compareAlternateLines' in request.form:
+        compAlt = True
+        compAltChecked = "checked"
+
     #lines = text.encode("utf-8").split("\n")
     lines = text.split("\n")
-    out = process(lines)
-    return render_template("form.html", direction=direction, initial_text=text, data=out)
+    out = process(lines, compareAlternateLines=compAlt)
+    return render_template("form.html", direction=direction, compAltChecked=compAltChecked, initial_text=text, data=out)
 
 
 @app.route('/expand/', methods=["GET", "POST"])

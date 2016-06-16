@@ -55,14 +55,27 @@ function clearResult() {
 <br>
 <input type="submit" name="my-form" value="Expand">
 <label><input type="checkbox" name="direction" id="cbox1" value="rtl" onchange="toggleDirection();">Right-to-left</label>
+<label><input type="checkbox" name="compareAlternateLines" id="cbox2" value="true" {{ compAltChecked }}>Compare alternate lines</label>
 <input type="button" value="Clear" onclick="clearInput();clearResult();">
 <br>
 </form>
 <p>
-Select "Right-to-left" if using Arabic script. Copy text to input field above. Press "Expand". Click anywhere below to select result, if you want to copy it.
+Select "Right-to-left" if using Arabic script. Copy text to input field above. Press "Expand". Click anywhere in the result field below to select the result, if you want to copy it.
+</p>
+<p>
+Parentheses are used for grouping, pipe for alternatives, square brackets for optional elements. Example: (a|b)[c] generates a, ac, b, bc.
+</p>
+<p>
+If "Compare alternate lines" is checked, even line numbers will be checked to ensure that the previous line is included in the generated strings. Example line 1: X, line 2 Y will print a warning, line 1 X, line 2 X|Y will not.
+</p>
+<p>
+Pattern errors such as unbalanced parentheses will result in an error message.
 </p>
 <p>
 Please report issues at <a href="https://github.com/HaraldBerthelsen/pattern_expander/issues">https://github.com/HaraldBerthelsen/pattern_expander/issues</a>.
+</p>
+<p>
+Result:
 </p>
 <hr>
 <div id="result" onclick="selectText('result')" dir="{{ direction }}">
@@ -86,5 +99,5 @@ if ( dir === "rtl" ) {
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Thu Jun 16 11:58:36 CEST 2016 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Thu Jun 16 12:40:08 CEST 2016 <!-- hhmts end -->
 </body> </html>

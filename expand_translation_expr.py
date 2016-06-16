@@ -15,36 +15,34 @@ def generate(regexp):
 
     try:
         gens = list(exrex.generate(regexp))
+
+        #build a dictionary to check for doubles
+        gen_count = {}
+        for gen in gens:    
+            gen = gen.strip()
+            gen = re.sub(" +"," ",gen)
+            if gen in gen_count:
+                gen_count[gen] += 1
+            else:
+                gen_count[gen] = 1
+
+        mod_gens = []
+        for gen in gens:    
+            gen = gen.strip()
+            gen = re.sub(" +"," ",gen)
+            if gen_count[gen] > 1:
+                mod_gens.append("WARNING --- DOUBLE %d" % gen_count[gen])
+            mod_gens.append(gen)
+
+        return (mod_gens, [])
+
+
+
+
     except:
-        print("ERROR in %s: %s %s" % (regexp, sys.exc_info()[0], sys.exc_info()[1]))
-        gens = []
-        #sys.exit()
-    
-    #print "Generated %d string(s)" % len(gens)
-
-    #build a dictionary to check for doubles
-    gen_count = {}
-    for gen in gens:    
-        gen = gen.strip()
-        gen = re.sub(" +"," ",gen)
-        if gen in gen_count:
-            gen_count[gen] += 1
-        else:
-            gen_count[gen] = 1
-
-
-
-    mod_gens = []
-    for gen in gens:    
-        gen = gen.strip()
-        gen = re.sub(" +"," ",gen)
-        if gen_count[gen] > 1:
-            mod_gens.append("WARNING --- DOUBLE %d" % gen_count[gen])
-        mod_gens.append(gen)
-
-
-    return mod_gens
-
+        msg = "ERROR in %s: %s %s" % (regexp, sys.exc_info()[0], sys.exc_info()[1])
+        print(msg)
+        return ([],[msg])
 
 
 def test():
@@ -69,7 +67,7 @@ def read_stdin():
         print(line)
 
 
-def process(lines):
+def process(lines, compareAlternateLines=True):
     result = []
     no = 0
     prevline = "first line"
@@ -104,17 +102,20 @@ def process(lines):
             #sys.stderr.write(line+"\n")
             #sys.exit()
 
-        gens = generate(line)
+        (gens, errors) = generate(line)
 
 
-        check_prev = True
-        if check_prev:
+        if compareAlternateLines:
             #Check that prevline is included, if line contains expansion pattern
             #This should not always happen, but most of the time.. (?)
             #only do this when the current linenr is even (odd: main, even: extended)
             #and use this list to ignore some specific lines 
             ignore_lines = [222,326,384,388,390,406,410,416,418,420,422]
-            if re.search(r"\[|\(",line) and (no % 2 == 0) and no not in ignore_lines:
+
+
+            #if re.search(r"\[|\(",line) and (no % 2 == 0) and no not in ignore_lines:
+            #removed the constraint only to do this if the line has [,|, or ("
+            if (no % 2 == 0) and no not in ignore_lines:
 
             #not only even
             #if re.search(r"\[|\(",line) and no not in ignore_lines:
@@ -183,6 +184,9 @@ def process(lines):
         for gen in gens:
             #print(gen)
             result.append(gen)
+        for error in errors:
+            #print(gen)
+            result.append(error)
     return result    
 
 if __name__ == "__main__":
