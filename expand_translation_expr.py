@@ -80,6 +80,8 @@ def process(lines):
         #A way to comment lines if needed
         if line.startswith("//"):
             continue
+        if line == "":
+            continue
 
 
         no = no+1
