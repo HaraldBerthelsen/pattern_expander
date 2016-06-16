@@ -171,7 +171,7 @@ def process(lines, compareAlternateLines=True):
                                 found = True
                         if found == False:
                             #print("WARNING line %d: main not in expanded\n%s" % (no,prevline))
-                            result.append(u"WARNING line %d: main not in expanded" % (no,))
+                            result.append(u"WARNING line %d: previous line not found in generated strings" % (no,))
                             result.append(u"%s" % (prevline,))
                         #sys.exit()
 
