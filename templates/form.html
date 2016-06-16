@@ -3,17 +3,65 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title></title>
+
+<script type="text/javascript">
+function toggleDirection() {
+   console.log("Toggling direction");
+   rtl = document.getElementById("cbox1").checked;
+   console.log("RTL: "+rtl);
+
+   direction = "ltr";
+   if ( rtl === true ) {
+      direction = "rtl";
+   }
+
+   document.getElementById("input").setAttribute("dir",direction);
+   document.getElementById("result").setAttribute("dir",direction);
+}
+
+
+
+function selectText(containerid) {
+    if (document.selection) {
+        var range = document.body.createTextRange();
+        range.moveToElementText(document.getElementById(containerid));
+        range.select();
+    } else if (window.getSelection()) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById(containerid));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+    }
+}
+
+function clearInput() {
+   document.getElementById("input").innerHTML = "";
+   document.getElementById("input").value = "";
+}
+
+function clearResult() {
+   document.getElementById("result").innerHTML = "";
+}
+
+</script>
+
 </head>
 
 <body>
 <h1></h1>
 
 <form action="." method="POST">
-<textarea name="text" value="{{ text }}" rows="20" cols="200"></textarea>
-<input type="submit" name="my-form" value="Send">
+<textarea id="input" name="text" rows="20" cols="200" dir="{{ direction }}">{{ initial_text }}</textarea>
+<input type="submit" name="my-form" value="Expand">
+<label><input type="checkbox" name="direction" id="cbox1" value="rtl" onchange="toggleDirection();">Right-to-left</label>
+<input type="button" value="Clear" onclick="clearInput();clearResult();">
+<br>
 </form>
-
-<div id="result">
+<p>
+Select "Right-to-left" if using Arabic script. Copy text to input field above. Press "Expand". Click anywhere below to select result, if you want to copy it.
+</p>
+<hr>
+<div id="result" onclick="selectText('result')" dir="{{ direction }}">
     {% for line in data %}
   <p>
        {{ line }}
@@ -22,11 +70,17 @@
 
   </div>
 
-
+<script type="text/javascript">
+var dir = "{{ direction }}";
+if ( dir === "rtl" ) {
+  document.getElementById("cbox1").setAttribute("checked",true);
+}
+</script>
+  
 </body>
 </html>
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Wed Jun 15 16:45:06 CEST 2016 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Thu Jun 16 11:03:13 CEST 2016 <!-- hhmts end -->
 </body> </html>

@@ -10,16 +10,26 @@ def form():
  لغو کن
  (لغو کن | حذف کن | تمام کن) [عمل کن |مورد | تنظیم| انتخاب کن]
 """
-    return render_template("form.html", text=text)
+    text = ""
+    direction = "ltr"
+    return render_template("form.html", direction=direction, initial_text=text)
 
 @app.route('/', methods=['POST'])
 def form_post():
 
+    print(request)
+    print(request.form)
+
     text = request.form['text']
+
+    direction = "ltr"
+    if 'direction' in request.form:
+        direction = request.form['direction']
+
     #lines = text.encode("utf-8").split("\n")
     lines = text.split("\n")
     out = process(lines)
-    return render_template("form.html", text=text, data=out)
+    return render_template("form.html", direction=direction, initial_text=text, data=out)
 
 
 @app.route('/expand/', methods=["GET", "POST"])
