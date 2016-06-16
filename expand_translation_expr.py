@@ -11,8 +11,10 @@ def generate(regexp):
         print(msg)
         return ([],msg.split("\n"))
 
-
+    
     #Because the format isn't actually regexp..
+    org_regexp = regexp
+
     regexp = re.sub("\.", "\.", regexp)
     regexp = re.sub("\?", "\?", regexp)
 
@@ -48,7 +50,7 @@ def generate(regexp):
 
     except:
         #msg = "ERROR in %s: %s %s" % (regexp, sys.exc_info()[0], sys.exc_info()[1])
-        msg = "ERROR in \n%s\n%s" % (regexp, sys.exc_info()[1])
+        msg = "ERROR in \n%s\n%s" % (org_regexp, sys.exc_info()[1])
         print(msg)
         return ([],msg.split("\n"))
 
