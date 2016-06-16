@@ -5,6 +5,13 @@ import re, sys
 
 def generate(regexp):
 
+    #check parentheses and brackets..
+    if regexp.count("(") != regexp.count(")") or regexp.count("[") != regexp.count("]"):
+        msg = "ERROR in \n%s\n%s" % (regexp, "unbalanced parentheses")
+        print(msg)
+        return ([],msg.split("\n"))
+
+
     #Because the format isn't actually regexp..
     regexp = re.sub("\.", "\.", regexp)
     regexp = re.sub("\?", "\?", regexp)
@@ -40,9 +47,10 @@ def generate(regexp):
 
 
     except:
-        msg = "ERROR in %s: %s %s" % (regexp, sys.exc_info()[0], sys.exc_info()[1])
+        #msg = "ERROR in %s: %s %s" % (regexp, sys.exc_info()[0], sys.exc_info()[1])
+        msg = "ERROR in \n%s\n%s" % (regexp, sys.exc_info()[1])
         print(msg)
-        return ([],[msg])
+        return ([],msg.split("\n"))
 
 
 def test():
@@ -175,7 +183,7 @@ def process(lines, compareAlternateLines=True):
         #end if check_prev
 
         #print("%d\n%s\n%d string(s)\n" % (no,line,len(gens)))
-        result.append(u"%d" % (no,))
+        result.append(u"input line %d:" % (no,))
         result.append(u"%s" % (line,))
         if len(gens) < 2:
             result.append(u"%d string generated:" % (len(gens),))

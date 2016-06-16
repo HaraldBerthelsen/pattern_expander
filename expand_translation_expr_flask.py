@@ -12,7 +12,9 @@ def form():
 """
     text = ""
     direction = "ltr"
-    return render_template("form.html", direction=direction, initial_text=text)
+    compAltChecked = "checked"
+    #compAltChecked = ""
+    return render_template("form.html", direction=direction, compAltChecked=compAltChecked, initial_text=text)
 
 @app.route('/', methods=['POST'])
 def form_post():
