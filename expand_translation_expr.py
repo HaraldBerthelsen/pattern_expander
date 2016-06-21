@@ -173,8 +173,9 @@ def process(lines, compareAlternateLines=True):
                                 found = True
                         if found == False:
                             #print("WARNING line %d: main not in expanded\n%s" % (no,prevline))
-                            result.append(u"WARNING line %d: previous line not found in generated strings" % (no,))
-                            result.append(u"%s" % (prevline,))
+                            result.append(u"<span dir='ltr'>WARNING line %d: previous line not found in generated strings.</span>" % (no,))
+                            #Maybe adding the previous line here is just confusing
+                            #result.append(u"%s" % (prevline,))
                         #sys.exit()
 
 
@@ -185,12 +186,12 @@ def process(lines, compareAlternateLines=True):
         #end if check_prev
 
         #print("%d\n%s\n%d string(s)\n" % (no,line,len(gens)))
-        result.append(u"input line %d:" % (no,))
+        result.append(u"<span dir='ltr'>input line %d:</span>" % (no,))
         result.append(u"%s" % (line,))
         if len(gens) < 2:
-            result.append(u"%d string generated:" % (len(gens),))
+            result.append(u"<span dir='ltr'>%d string generated:</span>" % (len(gens),))
         else:
-            result.append(u"%d strings generated:" % (len(gens),))
+            result.append(u"<span dir='ltr'>%d strings generated:</span>" % (len(gens),))
         for gen in gens:
             #print(gen)
             result.append(gen)

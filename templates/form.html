@@ -102,7 +102,7 @@ Please report issues at <a href="https://github.com/HaraldBerthelsen/pattern_exp
 <div id="result" onclick="selectText('result')" dir="{{ direction }}">
     {% for line in data %}
   <p>
-       {{ line }}
+       {{ line|safe }}
   </p>
     {% endfor %}
 
@@ -140,5 +140,5 @@ $(function() {
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Tue Jun 21 15:23:20 CEST 2016 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Tue Jun 21 15:34:46 CEST 2016 <!-- hhmts end -->
 </body> </html>
