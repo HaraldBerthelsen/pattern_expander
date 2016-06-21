@@ -187,20 +187,30 @@ def process(lines, compareAlternateLines=True):
 
         #print("%d\n%s\n%d string(s)\n" % (no,line,len(gens)))
         result.append(u"<span dir='ltr'>input line %d:</span>" % (no,))
-        result.append(u"%s" % (line,))
+
+        if re.match(u"^[\u0600-\u06FF\uFB8A\u067E\u0686\u06AF\u200C\u200F |()\[\]]+$",line):
+            result.append(u"<span dir='rtl'>%s</span>" % (line,))
+        else:
+            result.append(u"%s" % (line,))
+
         if len(gens) < 2:
             result.append(u"<span dir='ltr'>%d string generated:</span>" % (len(gens),))
         else:
             result.append(u"<span dir='ltr'>%d strings generated:</span>" % (len(gens),))
+
         for gen in gens:
             #print(gen)
-            result.append(gen)
+            if re.match(u"^[\u0600-\u06FF\uFB8A\u067E\u0686\u06AF\u200C\u200F |()\[\]]+$",gen):
+                result.append(u"<span dir='rtl'>%s</span>" % (gen,))
+            else:
+                result.append(gen)
+
         for error in errors:
             #print(gen)
             result.append(error)
     return result    
 
 if __name__ == "__main__":
-    test()
-    #read_stdin()
+    #test()
+    read_stdin()
 
