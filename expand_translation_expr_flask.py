@@ -12,6 +12,7 @@ def form():
 """
     text = ""
     direction = "ltr"
+    #direction = "rtl"
     compAltChecked = "checked"
     #compAltChecked = ""
     return render_template("form.html", direction=direction, compAltChecked=compAltChecked, initial_text=text)

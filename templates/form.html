@@ -4,6 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title></title>
 
+<!-- codemirror for better textarea (not using it now because it doesn't support rtl so well -->
+<!--
+<link rel=stylesheet href="static/codemirror/lib/codemirror.css">
+<script src="static/codemirror/lib/codemirror.js"></script>
+-->
+
+<!-- simple jquery line numbers -->
+<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+<link rel=stylesheet href="static/jquery-linedtextarea/jquery-linedtextarea.css">
+<script src="static/jquery-linedtextarea/jquery-linedtextarea.js"></script>
+
+
 <script type="text/javascript">
 function toggleDirection() {
    console.log("Toggling direction");
@@ -53,6 +65,13 @@ function clearResult() {
 <form action="." method="POST">
 <textarea id="input" name="text" rows="20" cols="100" dir="{{ direction }}" style="width:97%">{{ initial_text }}</textarea>
 <br>
+
+<!-- codemirror test -->
+<!--
+<textarea id="cmtext" dir="{{ direction }}" style="width:97%">{{ initial_text }}</textarea>
+<br>
+-->
+
 <input type="submit" name="my-form" value="Expand">
 <label><input type="checkbox" name="direction" id="cbox1" value="rtl" onchange="toggleDirection();">Right-to-left</label>
 <label><input type="checkbox" name="compareAlternateLines" id="cbox2" value="true" {{ compAltChecked }}>Compare alternate lines</label>
@@ -93,11 +112,31 @@ if ( dir === "rtl" ) {
   document.getElementById("cbox1").setAttribute("checked",true);
 }
 </script>
+
+  <!-- codemirror -->
+  <!--
+  <script>
+  var editor = CodeMirror.fromTextArea(document.getElementById("cmtext"), {
+    lineNumbers: true
+  });
+</script>
+-->
   
+  <!-- jquery_linedtextarea -->
+  <script type="text/javascript">
+$(function() {
+
+
+  // Target a single one
+  $("#input").linedtextarea();
+
+});
+</script>
+
 </body>
 </html>
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Thu Jun 16 12:40:08 CEST 2016 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Tue Jun 21 14:37:19 CEST 2016 <!-- hhmts end -->
 </body> </html>
